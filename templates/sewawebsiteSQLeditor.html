@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+}
+table{
+    border-collapse: collapse;
+  }
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(66, 22, 101);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: yellow;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: rgb(66, 22, 101);
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: rgb(66, 22, 101);
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 170px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+  body{
+    background-color: aliceblue;
+    font-family: "Lato", sans-serif;
+  }
+
+.sql{
+    width: 95%;
+    margin-left: 7px;
+    height: 100px;
+}
+
+
+
+    .column{
+        width:95%;
+        margin-left: 7px;
+        font-size: 18px;
+    }
+    .limit {
+    overflow-y: scroll;
+    height: 400px;
+    width: 94.8%;
+    margin-left: 7px;
+}
+
+  .terminal{
+    font-size: 25px;
+    margin-top: 80px;
+    margin-left: 100px;
+    width: 80%;
+  }
+
+  td, th {
+    border: 1px solid black;
+    border-width: 3px;
+    text-align: left;
+    padding: 8px;
+    font-size: 17px;
+    width: 200px;
+  }
+
+    .submit{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 7px;
+    width: 95%;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .sql{
+        width:60%;
+        margin-left: 200px;
+        font-size: 18px;
+    }
+
+    .column{
+        width:60%;
+        margin-left: 200px;
+        font-size: 18px;
+    }
+    .limit {
+    overflow-y: scroll;
+    height: 400px;
+    width: 94.8%;
+    margin-left: 100px;
+}
+    .submit{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 240px;
+    width: 50%;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .sql{
+        width:70%;
+        margin-left: 150px;
+        font-size: 18px;
+    }
+
+    .column{
+        width:70%;
+        margin-left: 150px;
+        font-size: 18px;
+    }
+    .limit {
+    overflow-y: scroll;
+    height: 400px;
+    width: 94.8%;
+    margin-left: 100px;
+}
+    .submit{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 250px;
+    width: 50%;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+  }
+
+  @media only screen and (min-width: 1300px) {
+    .sql{
+        width:70%;
+        margin-left: 230px;
+        font-size: 18px;
+    }
+
+    .column{
+        width:70%;
+        margin-left: 23
+        0px;
+        font-size: 18px;
+    }
+    .limit {
+    overflow-y: scroll;
+    height: 400px;
+    width: 94.8%;
+    margin-left: 100px;
+}
+.submit{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 450px;
+    width: 30%;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+    
+}
+@media only screen and (min-width: 1440px) {
+  .sql{
+        width:60%;
+        margin-left: 250px;
+        font-size: 18px;
+    }
+
+    .column{
+        width:60%;
+        margin-left: 250px;
+        font-size: 18px;
+    }
+    .limit {
+    overflow-y: scroll;
+    height: 400px;
+    width: 94.8%;
+    margin-left: 100px;
+}
+.submit{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 480px;
+    width: 30%;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+}
+
+  @media only screen and (min-width: 1900px) {
+    .sql{
+        width:30%;
+        margin-left: 690px;
+        font-size: 18px;
+    }
+
+    .column{
+        width:30%;
+        margin-left: 690px;
+        font-size: 18px;
+    }
+    .limit {
+    overflow-y: scroll;
+    height: 400px;
+    width: 94.8%;
+    margin-left: 100px;
+}
+
+.submit{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 780px;
+    width: 20%;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+    cursor: pointer;
+    
+  }
+    
+}
+
+@media only screen and (min-width: 2560px) {
+  .sql{
+        width:40%;
+        margin-left: 710px;
+        font-size: 18px;
+    }
+
+    .column{
+        width:40%;
+        margin-left: 710px;
+        font-size: 18px;
+    }
+    .limit {
+    overflow-y: scroll;
+    height: 400px;
+    width: 94.8%;
+    margin-left: 100px;
+}
+.submit{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 880px;
+    width: 30%;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+    
+}
+</style>
+
+<html lang="en">
+    <head>
+        <title>Sewa Hours - SQL Editor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://www.logolynx.com/images/logolynx/s_f5/f518c85cb9f37aa1e50995008a69f5df.jpeg" rel="shortcut icon" type="image/jpg"/>
+        <header>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/adminhome" class="home">Home</a>
+            <a href="/adminprofile" class="profile">Manage Profile</a>
+            <a href="/manageadmins">Manage Admins</a>
+            <a href="/reinstateadmins">Reinstate Admins</a>
+            <a href="/addcategory">Add Sewa Program</a>
+            <a href="/removecategory">Remove Sewa Program</a>
+            <a href="/addevents">Add Events</a>
+            <a href="/removeevents">Remove Events</a>
+            <a href="/certify">Certify Hours</a>
+            <button class="dropdown-btn">Reports  
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="/approvedhours">Approved Hours Report</a>
+              <a href="/certifiedhours">Certified Hours Report</a>
+              <a href="/rejectedhours">Rejected Hours Report</a>
+              <a href="/unapprovedhours">Unapproved Hours Report</a>
+              <a href="/yearend">Year End Medal Report</a>
+            </div>
+            <a href="/logout" onclick="clearLocal()">Log-Out</a>
+          </div>
+            
+          <span style="font-size:28px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+          <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "280px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+            
+            <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                } else {
+                  dropdownContent.style.display = "block";
+                }
+              });
+            }
+            </script>
+      </header>
+    </head>
+
+    <body>
+      <div class="limit">
+        <table class="terminal" id="Terminal">
+       </table>
+      </div>
+        <form>
+            <textarea class="sql" id="Sql" placeholder="SQL Command"></textarea>
+        </form>
+        <form method="get">
+            <input type="button" value="Access Records" class="submit" id="Submit" onclick="sqlCommand()">
+        </form>
+          
+    </body>
+</html>
+
+<script>
+
+  function sqlCommand()
+  {
+    const commandData = document.getElementById("Sql").value
+    const table = document.getElementById("Terminal")
+    let syntax = ``
+
+    var sql_data = [
+      {"command": commandData}
+    ];
+
+    $.ajax({
+      type: "POST",
+      url: "/execute",
+      data: JSON.stringify(sql_data),
+      contentType: "application/json",
+      dataType: 'json',
+      success: function(data)
+      {
+        alert("Success")
+        function rows(row1, row2)
+        {
+          syntax += `<td>${data[row1][row2]}</td>`
+        }
+
+        for (let i = 0; i < data.length; i++)
+        {
+          for (let j = 0; j < data[i].length; j++)
+          {
+            rows(i, j)
+          }
+          console.log(syntax)
+          table.innerHTML += `
+            <tr style="height:150px">
+              ${syntax}
+            </tr>
+          `
+          syntax = ``
+        }
+      }
+    });
+  }
+</script>
+
+<script>
+  var global = 300;
+
+  function noMovement() {
+  if (global == 0) {
+  window.location.href = "/";  
+  localStorage.clear()
+  resetGlobal();                
+  } else {
+        global--;
+  }
+  }
+
+  function resetGlobal() {
+  global=300;                    
+  }
+
+  $(document).ready(function(){
+  $('html').mousemove(function(event){
+    resetGlobal();
+  });
+  });
+
+  setInterval(function(){noMovement()}, 1000);
+</script>
+
+<script>
+  function clearLocal()
+  {
+    localStorage.clear()
+  }
+</script>

@@ -1,0 +1,2138 @@
+<!DOCTYPE html>
+
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Add a black background color to the top navigation */
+  .rightnav {
+    background-color: rgb(66, 22, 101);
+    overflow: hidden;
+    height: 70px;
+    width: 100%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .rightnav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 23px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .rightnav a:hover {
+    color: yellow;
+  }
+  
+  /* Add a color to the active/current link */
+  .rightnav a.active1 {
+    background-color: black;
+    color: white;
+  }
+
+  .leftnav img {
+    width:60px;
+    height: 60px;
+    float: left;
+    margin-top: -20px;
+    margin-right: 950px;
+  }
+
+  .title{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0px;
+  }
+
+  .user{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 95%;
+    border-width:2px;
+    margin-left: 5px;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .admin{
+    width: 95%;
+    margin-left: 5px;
+    height: 30px;
+    font-size:20px;
+    border-color: white;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .label0{
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: Arial;
+    text-align: center;
+  }
+
+  .label1{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .password{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 95%;
+    border-width:2px;
+    margin-left: 5px;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .label2{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+  }
+
+  .fname{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 95%;
+    border-width:2px;
+    margin-left: 5px;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .label3{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+  }
+
+  .lname{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 95%;
+    border-width:2px;
+    margin-left: 5px;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .label4{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+  }
+
+  .email{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 95%;
+    border-width:2px;
+    margin-left: 5px;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .label5{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+  }
+
+  .chapter{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 95%;
+    border-width:2px;
+    margin-left: 5px;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .label6{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+  }
+
+  .birthday{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 95%;
+    border-width:2px;
+    margin-left: 5px;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .label7{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+  }
+
+  .citizen{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 95%;
+    border-width:2px;
+    margin-left: 5px;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .label8{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+  }
+
+  .signup{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 5px;
+    width: 95%;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+  }
+
+
+  .approval{
+    width: 85%;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .morespace{
+    height: 100px;
+  }
+
+  body{
+    background-color: aliceblue;
+  }
+
+  .g-recaptcha{
+    margin-left: 780px;
+    margin-top: 30px;
+  }
+
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 22px;
+    text-align: center;
+    height: 140px;
+    font-family: Arial;
+    margin-top: 9px;
+  }
+  @media only screen and (min-width: 768px) {
+    .user{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 98%;
+    border-width:2px;
+    margin-left: 5px;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .admin{
+    width: 98%;
+    margin-left: 5px;
+    height: 30px;
+    font-size:20px;
+    border-color: white;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .label0{
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: Arial;
+    text-align: center;
+  }
+
+  .label1{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .password{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 98%;
+    border-width:2px;
+    margin-left: 5px;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .label2{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+  }
+
+  .fname{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 98%;
+    border-width:2px;
+    margin-left: 5px;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .label3{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+  }
+
+  .lname{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 98%;
+    border-width:2px;
+    margin-left: 5px;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .label4{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+  }
+
+  .email{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 98%;
+    border-width:2px;
+    margin-left: 5px;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .label5{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+  }
+
+  .chapter{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 98%;
+    border-width:2px;
+    margin-left: 5px;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .label6{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+  }
+
+  .birthday{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 98%;
+    border-width:2px;
+    margin-left: 5px;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .label7{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+  }
+
+  .citizen{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 98%;
+    border-width:2px;
+    margin-left: 5px;
+    border-radius: 13px;
+    margin-top: 10px;
+  }
+
+  .label8{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+  }
+
+  .signup{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 200px;
+    width: 50%;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+  }
+
+
+  .approval{
+    width: 30%;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 270px;
+    font-size: 20px;
+    text-align: center;
+  }
+  }
+  @media only screen and (min-width: 1024px) {
+    .signup{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 300px;
+    width: 40%;
+    background-color:bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+  }
+
+  .approval{
+    width: 25%;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 370px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  }
+
+  @media only screen and (min-width: 1200px) {
+    /* Add a black background color to the top navigation */
+  .rightnav {
+    background-color: rgb(66, 22, 101);
+    overflow: hidden;
+    height: 70px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .rightnav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 23px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .rightnav a:hover {
+    color: yellow;
+  }
+  
+  /* Add a color to the active/current link */
+  .rightnav a.active1 {
+    background-color: black;
+    color: white;
+  }
+
+  .title{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0px;
+  }
+
+  .user{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -100px;
+    border-radius: 13px;
+    margin-top: 50px;
+  }
+
+  .admin{
+    width: 960px;
+    margin-left: 5px;
+    height: 30px;
+    font-size:20px;
+    border-color: white;
+    border-radius: 13px;
+  }
+
+  .label0{
+    margin-left: 128px;
+    font-size: 18px;
+    font-family: Arial;
+  }
+
+  .label1{
+    font-size: 18px;
+    padding: 0px 100px;
+    font-family: Arial;
+  }
+
+  .password{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -60px;
+    border-radius: 13px;
+    margin-top: 50px;
+  }
+
+  .label2{
+    font-size: 18px;
+    padding: 0px 60px;
+    font-family: Arial;
+  }
+
+  .fname{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -95px;
+    border-radius: 13px;
+    margin-top: 50px;
+  }
+
+  .label3{
+    font-size: 18px;
+    padding: 0px 95px;
+    font-family: Arial;
+    margin-top: 30px;
+  }
+
+  .lname{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -50px;
+    border-radius: 13px;
+    margin-top: 50px;
+  }
+
+  .label4{
+    font-size: 18px;
+    padding: 0px 50px;
+    font-family: Arial;
+  }
+
+  .email{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -130px;
+    border-radius: 13px;
+    margin-top: 50px;
+
+  }
+
+  .label5{
+    font-size: 18px;
+    padding: 0px 135px;
+    font-family: Arial;
+  }
+
+  .chapter{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -70px;
+    border-radius: 13px;
+    margin-top: 50px;
+  }
+
+  .label6{
+    font-size: 18px;
+    padding: 0px 70px;
+    font-family: Arial;
+  }
+
+  .birthday{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -120px;
+    border-radius: 13px;
+    margin-top: 50px;
+  }
+
+  .label7{
+    font-size: 18px;
+    padding: 0px 120px;
+    font-family: Arial;
+  }
+
+  .citizen{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -10px;
+    border-radius: 13px;
+    margin-top: 50px;
+  }
+
+  .label8{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+  }
+
+
+  .address{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    border-radius: 13px;
+    height: 40px;
+    width: 945px;
+    border-width:2px;
+    margin-left: -120px;
+    margin-top: 60px;
+  }
+
+  .label9{
+    font-size: 18px;
+    padding: 0px 120px;
+    font-family: Arial;
+  }
+
+  .signup{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 410px;
+    width: 500px;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+  }
+
+
+  .approval{
+    width: 280px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 515px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .morespace{
+    height: 100px;
+  }
+
+  body{
+    background-color: aliceblue;
+  }
+
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 22px;
+    text-align: center;
+    height: 140px;
+    font-family: Arial;
+    margin-top: 9px;
+  }
+  }
+  @media only screen and (min-width: 1440px) {
+  .title{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0px;
+  }
+
+  .user{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -100px;
+    border-radius: 13px;
+  }
+
+  .admin{
+    width: 960px;
+    margin-left: 5px;
+    height: 30px;
+    font-size:20px;
+    border-color: white;
+    border-radius: 13px;
+  }
+
+  .label0{
+    margin-left: 128px;
+    font-size: 18px;
+    font-family: Arial;
+    margin-left: 200px;
+  }
+
+  .label1{
+    font-size: 18px;
+    padding: 0px 100px;
+    font-family: Arial;
+    margin-left: 70px;
+  }
+
+  .password{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -60px;
+    border-radius: 13px;
+    margin-top: 60px;
+  }
+
+  .label2{
+    font-size: 18px;
+    padding: 0px 60px;
+    font-family: Arial;
+  }
+
+  .fname{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -95px;
+    border-radius: 13px;
+  }
+
+  .label3{
+    font-size: 18px;
+    padding: 0px 95px;
+    font-family: Arial;
+    margin-left: 70px;
+  }
+
+  .lname{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -50px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label4{
+    font-size: 18px;
+    padding: 0px 50px;
+    font-family: Arial;
+  }
+
+  .email{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -130px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label5{
+    font-size: 18px;
+    padding: 0px 135px;
+    font-family: Arial;
+    margin-left: 70px;
+  }
+
+  .chapter{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -70px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label6{
+    font-size: 18px;
+    padding: 0px 70px;
+    font-family: Arial;
+  }
+
+  .birthday{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -120px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label7{
+    font-size: 18px;
+    padding: 0px 120px;
+    font-family: Arial;
+    margin-left: 70px;
+  }
+
+  .citizen{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -10px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label8{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: Arial;
+  }
+
+  .signup{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 460px;
+    width: 500px;
+    background-color: bisque;
+    margin-top: 40px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+  }
+
+
+  .approval{
+    width: 280px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 565px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .morespace{
+    height: 100px;
+  }
+
+  body{
+    background-color: aliceblue;
+  }
+
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 22px;
+    text-align: center;
+    height: 140px;
+    font-family: Arial;
+    margin-top: 9px;
+  }
+  }
+  @media only screen and (min-width: 1570px) {
+    .title{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0px;
+  }
+
+  .user{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -250px;
+    border-radius: 13px;
+  }
+
+  .admin{
+    width: 960px;
+    margin-left: 0px;
+    height: 30px;
+    font-size:20px;
+    border-color: white;
+    border-radius: 13px;
+  }
+
+  .label0{
+    font-size: 18px;
+    font-family: Arial;
+    margin-left: 400px;
+  }
+
+  .label1{
+    font-size: 18px;
+    padding: 0px 250px;
+    font-family: Arial;
+  }
+
+  .password{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -120px;
+    margin-top: 60px;
+  }
+
+  .label2{
+    font-size: 18px;
+    padding: 0px 120px;
+    font-family: Arial;
+  }
+
+  .fname{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -240px;
+    border-radius: 13px;
+  }
+
+  .label3{
+    font-size: 18px;
+    padding: 0px 240px;
+    font-family: Arial;
+    margin-left: 70px;
+  }
+
+  .lname{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -120px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label4{
+    font-size: 18px;
+    padding: 0px 120px;
+    font-family: Arial;
+  }
+
+  .email{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -280px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label5{
+    font-size: 18px;
+    padding: 0px 280px;
+    font-family: Arial;
+    margin-left: 70px;
+  }
+
+  .chapter{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -150px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label6{
+    font-size: 18px;
+    padding: 0px 150px;
+    font-family: Arial;
+  }
+
+  .birthday{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -260px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label7{
+    font-size: 18px;
+    padding: 0px 260px;
+    font-family: Arial;
+    margin-left: 70px;
+  }
+
+  .citizen{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -80px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label8{
+    font-size: 18px;
+    padding: 0px 80px;
+    font-family: Arial;
+  }
+
+  .signup{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 680px;
+    width: 500px;
+    background-color: bisque;
+    margin-top: 40px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+  }
+
+
+  .approval{
+    width: 280px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 565px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .morespace{
+    height: 100px;
+  }
+
+  body{
+    background-color: aliceblue;
+  }
+
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 25px;
+    text-align: center;
+    height: 160px;
+    font-family: Arial;
+    margin-top: 9px;
+  }
+  }
+
+  @media only screen and (min-width: 1895px) {
+    .title{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0px;
+  }
+
+  .user{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -250px;
+    border-radius: 13px;
+  }
+
+  .admin{
+    width: 960px;
+    margin-left: 0px;
+    height: 30px;
+    font-size:20px;
+    border-color: white;
+    border-radius: 13px;
+  }
+
+  .label0{
+    font-size: 18px;
+    font-family: Arial;
+    margin-left: 400px;
+  }
+
+  .label1{
+    font-size: 18px;
+    padding: 0px 250px;
+    font-family: Arial;
+  }
+
+  .password{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -120px;
+    margin-top: 60px;
+  }
+
+  .label2{
+    font-size: 18px;
+    padding: 0px 120px;
+    font-family: Arial;
+  }
+
+  .fname{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -240px;
+    border-radius: 13px;
+  }
+
+  .label3{
+    font-size: 18px;
+    padding: 0px 240px;
+    font-family: Arial;
+    margin-left: 70px;
+  }
+
+  .lname{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -120px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label4{
+    font-size: 18px;
+    padding: 0px 120px;
+    font-family: Arial;
+  }
+
+  .email{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -280px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label5{
+    font-size: 18px;
+    padding: 0px 280px;
+    font-family: Arial;
+    margin-left: 70px;
+  }
+
+  .chapter{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -150px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label6{
+    font-size: 18px;
+    padding: 0px 150px;
+    font-family: Arial;
+  }
+
+  .birthday{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -260px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label7{
+    font-size: 18px;
+    padding: 0px 260px;
+    font-family: Arial;
+    margin-left: 70px;
+  }
+
+  .citizen{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -80px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label8{
+    font-size: 18px;
+    padding: 0px 80px;
+    font-family: Arial;
+  }
+
+  .signup{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 680px;
+    width: 500px;
+    background-color: bisque;
+    margin-top: 40px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+  }
+
+
+  .approval{
+    width: 280px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 565px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .morespace{
+    height: 100px;
+  }
+
+  body{
+    background-color: aliceblue;
+  }
+
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 25px;
+    text-align: center;
+    height: 160px;
+    font-family: Arial;
+    margin-top: 9px;
+  }
+  }
+
+  @media only screen and (min-width: 2100px) {
+    .title{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0px;
+  }
+
+  .user{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -600px;
+    border-radius: 13px;
+  }
+
+  .admin{
+    width: 960px;
+    margin-left: 0px;
+    height: 30px;
+    font-size:20px;
+    border-color: white;
+    border-radius: 13px;
+  }
+
+  .label0{
+    font-size: 18px;
+    font-family: Arial;
+    margin-left: 750px;
+  }
+
+  .label1{
+    font-size: 18px;
+    padding: 0px 600px;
+    font-family: Arial;
+  }
+
+  .password{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -120px;
+    margin-top: 60px;
+  }
+
+  .label2{
+    font-size: 18px;
+    padding: 0px 120px;
+    font-family: Arial;
+  }
+
+  .fname{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -580px;
+    border-radius: 13px;
+  }
+
+  .label3{
+    font-size: 18px;
+    padding: 0px 580px;
+    font-family: Arial;
+    margin-left: 70px;
+  }
+
+  .lname{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -120px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label4{
+    font-size: 18px;
+    padding: 0px 120px;
+    font-family: Arial;
+  }
+
+  .email{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -610px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label5{
+    font-size: 18px;
+    padding: 0px 610px;
+    font-family: Arial;
+    margin-left: 70px;
+  }
+
+  .chapter{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -150px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label6{
+    font-size: 18px;
+    padding: 0px 150px;
+    font-family: Arial;
+  }
+
+  .birthday{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -590px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label7{
+    font-size: 18px;
+    padding: 0px 590px;
+    font-family: Arial;
+    margin-left: 70px;
+  }
+
+  .citizen{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -80px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label8{
+    font-size: 18px;
+    padding: 0px 80px;
+    font-family: Arial;
+  }
+
+  .signup{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 980px;
+    width: 20%;
+    background-color: bisque;
+    margin-top: 70px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+  }
+
+
+  .approval{
+    width: 280px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 565px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .morespace{
+    height: 100px;
+  }
+
+  body{
+    background-color: aliceblue;
+  }
+
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 25px;
+    text-align: center;
+    height: 160px;
+    font-family: Arial;
+    margin-top: 9px;
+  }
+  }
+
+  @media only screen and (min-width: 2560px) {
+    .title{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0px;
+  }
+
+  .user{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -600px;
+    border-radius: 13px;
+  }
+
+  .admin{
+    width: 960px;
+    margin-left: 0px;
+    height: 30px;
+    font-size:20px;
+    border-color: white;
+    border-radius: 13px;
+  }
+
+  .label0{
+    font-size: 18px;
+    font-family: Arial;
+    margin-left: 750px;
+  }
+
+  .label1{
+    font-size: 18px;
+    padding: 0px 600px;
+    font-family: Arial;
+  }
+
+  .password{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -120px;
+    margin-top: 60px;
+  }
+
+  .label2{
+    font-size: 18px;
+    padding: 0px 120px;
+    font-family: Arial;
+  }
+
+  .fname{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -580px;
+    border-radius: 13px;
+  }
+
+  .label3{
+    font-size: 18px;
+    padding: 0px 580px;
+    font-family: Arial;
+    margin-left: 70px;
+  }
+
+  .lname{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -120px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label4{
+    font-size: 18px;
+    padding: 0px 120px;
+    font-family: Arial;
+  }
+
+  .email{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -610px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label5{
+    font-size: 18px;
+    padding: 0px 610px;
+    font-family: Arial;
+    margin-left: 70px;
+  }
+
+  .chapter{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -150px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label6{
+    font-size: 18px;
+    padding: 0px 150px;
+    font-family: Arial;
+  }
+
+  .birthday{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 37px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -590px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label7{
+    font-size: 18px;
+    padding: 0px 590px;
+    font-family: Arial;
+    margin-left: 70px;
+  }
+
+  .citizen{
+    font-size:20px;
+    color:black;
+    background-color: white;
+    border-color: white;
+    height: 41px;
+    width: 400px;
+    border-width:2px;
+    margin-left: -80px;
+    border-radius: 13px;
+    margin-top: 100px;
+  }
+
+  .label8{
+    font-size: 18px;
+    padding: 0px 80px;
+    font-family: Arial;
+  }
+
+  .signup{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 980px;
+    width: 20%;
+    background-color: bisque;
+    margin-top: 70px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+  }
+
+
+  .approval{
+    width: 280px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 565px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .morespace{
+    height: 100px;
+  }
+
+  body{
+    background-color: aliceblue;
+  }
+
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 25px;
+    text-align: center;
+    height: 160px;
+    font-family: Arial;
+    margin-top: 9px;
+  }
+  }
+
+</style>
+
+
+<html lang="en">
+    <head>
+        <title>Sewa Hours - Signup</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://www.logolynx.com/images/logolynx/s_f5/f518c85cb9f37aa1e50995008a69f5df.jpeg" rel="shortcut icon" type="image/jpg"/>
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
+        <header>
+            <header class="rightnav" aria-label="navigation">
+                <a href="https://www.sewausa.org/Chapters" target="_blank">Contact Coordinator</a>
+                <a href="/">Home</a>
+            </header>
+        </header>
+    </head>
+
+        <body>
+            <p class="title">Signup</p>
+            <form method="post" id="accountp1">
+                <label class="label0">Admin:</label>
+                <select class="admin" id="Admin" name="Admin"required>
+                    <option>Yes</option>
+                    <option selected>No</option>
+                </select>
+                <label class="label1">Username:</label>
+                <input type="text" class="user" id="User" name="User" required/>
+                <label class="label2">Password:</label>
+                <input type="password" class="password" id="Password" name="Password"required/>
+            </form>
+
+            <form method="post" id="accountp2">
+                <label class="label3">First Name:</label>
+                <input class="fname" id="FName" name="FName"required/>
+                <label class="label4">Last Name:</label>
+                <input class="lname" id="LName" name="LName"required/>
+            </form>
+
+            <form method="post" id="accountp3">
+                <label class="label5">Email:</label>
+                <input type="email" class="email" id="Email" name="Email"required/>
+                <label class="label6">Chapter:</label>
+                <select class="chapter" id="Chapter" name="Chapter"required>
+                    <option selected>Select...</option>
+                    <option>Atlanta, GA</option>
+                    <option>Austin, TX</option>
+                    <option>Bay Area, CA</option>
+                    <option>Bloomington, IL</option>
+                    <option>Boston, MA</option>
+                    <option>Boston, ME</option>
+                    <option>Central Jersey, NJ</option>
+                    <option>Charlotte, NC</option>
+                    <option>Chicago, IL</option>
+                    <option>Cleveland, OH</option>
+                    <option>Columbus, OH</option>
+                    <option>Dallas, TX</option>
+                    <option>Denver, CO</option>
+                    <option>Detriot, MI</option>
+                    <option>Houston, TX</option>
+                    <option>Indianapolis, IN</option>
+                    <option>Los Angelos, CA</option>
+                    <option>Milwaukee, WI</option>
+                    <option>New York City, NY</option>
+                    <option>North Jersey, NJ</option>
+                    <option>Milwaukee, WI</option>
+                    <option>Pennsylvaina, DE</option>
+                    <option>Phoenix, AZ</option>
+                    <option>Portland, OR</option>
+                    <option>Raleigh, NC</option>
+                    <option>RTP, MO</option>
+                    <option>Sacramento, CA</option>
+                    <option>Salt Lake City, UT</option>
+                    <option>San Antonio, TX</option>
+                    <option>San Diego, CA</option>
+                    <option>Seattle, WA</option>
+                    <option>St Louis, IL</option>
+                    <option>Washington DC</option>
+                </select>
+            </form>
+
+            <form method="post" class="1" id="accountp4">
+                <label class="label7">Birthday:</label>
+                <input class="birthday" type="date" id="Birthday" name="Birthday" onkeydown="return false" required>
+                <label class="label8">PVSA Eligibility:</label>
+                <select class="citizen" id="Citizen" name="Citizen"required>
+                    <option>Select...</option>
+                    <option>US Citizen or Greencard Holder</option>
+                    <option>VISA</option>
+                </select>
+            </form>
+            
+            <!--<div class="g-recaptcha" data-sitekey="6LfTbXgiAAAAAOOJ4L2aULb0CVGVeroLurKO3a2p"></div>-->
+            <form method="post" id="accountp5">
+                <input class="signup" type="button" onclick="signup()" value="Create Account">
+            </form>
+
+
+            <div class="morespace"></div>
+        </body>
+
+        <footer>
+          <p>Disclaimer: This is a prototype that is being tested!</p>
+          <p>We advise to keep your hours sepeartely logged in a spreadsheet in case the web app crashes</p>
+          <p>We are not responsible for lost hours!</p>
+      </footer>
+</html>
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+      
+<script type="text/javascript">
+  emailjs.init('jbGMchdFOb7Tq0Bxa')
+</script>
+
+        <script>
+          function validateEmail(email) {
+          let res = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+          return res.test(email);
+      }
+        </script>
+
+        <script>
+
+          var today = new Date();
+          var year = today.getFullYear()
+          var maxDate = `${year-5}-12-31`;
+          var minDate = `${year-65}-01-01`;
+          document.getElementsByName("Birthday")[0].setAttribute('min', minDate);
+          document.getElementsByName("Birthday")[0].setAttribute('max', maxDate);
+
+          function signup()
+          {
+
+            let admin = document.forms['accountp1']['Admin'].value
+            let username = document.forms['accountp1']['User'].value
+            let password = document.forms['accountp1']['Password'].value
+            let firstname = document.forms['accountp2']['FName'].value
+            let lastname = document.forms['accountp2']['LName'].value
+            let email = document.forms['accountp3']['Email'].value
+            let chapter = document.forms['accountp3']['Chapter'].value
+            let birthday = document.forms['accountp4']['Birthday'].value
+            let eligibility = document.forms['accountp4']['Citizen'].value
+            
+              if (username === "")
+              {
+                  alert("Username not entered")
+              }
+              else if (password === "")
+              {
+                  alert("Password not entered")
+              }
+              else if (firstname === "")
+              {
+                  alert("First name not entered")
+              }
+              else if (lastname === "")
+              {
+                  alert("Last name not entered")
+              }
+              else if (email === "")
+              {
+                  alert("Email not entered")
+              }
+              else if(validateEmail(email) == false) 
+              {
+                alert("Invalid Email Address")
+              } 
+              else if (chapter === "Select...")
+              {
+                  alert("Chapter not entered")
+              }
+              else if (birthday === "")
+              {
+                  alert("Birthday not entered")
+              }
+              else if (eligibility === "Select...")
+              {
+                  alert("PVSA eligibility not entered")
+              }
+              else
+              {
+                  if (admin === "No")
+                  {
+                    var server_data = [
+                    {"username": username},
+                    {"password": password},
+                    {"firstname": firstname},
+                    {"lastname": lastname},
+                    {"email": email},
+                    {"chapter": chapter},
+                    {"birthday": birthday},
+                    {"eligibility": eligibility},
+                    {"admin": admin}
+                   ];
+
+                  $.ajax({
+                    type: "POST",
+                    url: "/account",
+                    data: JSON.stringify(server_data),
+                    contentType: "application/json",
+                    dataType: 'json',
+                    success: function(data)
+                    {
+                      if (data.duplicate == "yes")
+                      {
+                        alert("Username already exists")
+                      }
+                      else if (data.email_dup == "yes")
+                      {
+                        alert("Email already in use")
+                      }
+                      else
+                      {
+                          const serviceID = 'default_service';
+                          const templateID = 'template_r4v67v4';
+
+                          emailjs.send(serviceID, templateID, {
+                            name : firstname,
+                            mail : email,
+                            user : username
+                          })
+                          .then(() => {
+                            window.location.href = "/"
+                            alert("Confirmation Email Sent")
+                          }, (err) => {
+                            alert(JSON.stringify(err));
+                          });
+                            }
+                          }
+                        });
+                  }
+                  else
+                  {
+                    var server_data = [
+                    {"username": username},
+                    {"password": password},
+                    {"firstname": firstname},
+                    {"lastname": lastname},
+                    {"email": email},
+                    {"chapter": chapter},
+                    {"birthday": birthday},
+                    {"eligibility": eligibility},
+                    {"admin": admin}
+                  ];
+
+                    $.ajax({
+                      type: "POST",
+                      url: "/account",
+                      data: JSON.stringify(server_data),
+                      contentType: "application/json",
+                      dataType: 'json',
+                      success: function(data)
+                      {
+                        if (data.duplicate == "yes")
+                      {
+                        alert("Username already exists")
+                      }
+                      else if (data.email_dup == "yes")
+                      {
+                        alert("Email already in use")
+                      }
+                      else
+                      {
+                        const serviceID = 'default_service';
+                          const templateID = 'template_r4v67v4';
+
+                          emailjs.send(serviceID, templateID, {
+                            name : firstname,
+                            mail : email,
+                            user : username
+                          })
+                          .then(() => {
+                            window.location.href = "/"
+                            alert("Confirmation Email Sent")
+                          }, (err) => {
+                            alert(JSON.stringify(err));
+                          });
+                      }
+                      }
+                    });
+                  }
+                }
+              }
+          
+      </script>
+
+<script>
+  localStorage.clear()
+</script> 

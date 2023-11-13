@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Add a black background color to the top navigation */
+  .rightnav {
+    background-color: rgb(66, 22, 101);
+    overflow: hidden;
+    height: 70px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .rightnav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 23px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .rightnav a:hover {
+    color: yellow;
+  }
+  
+  /* Add a color to the active/current link */
+  .rightnav a.active1 {
+    background-color: black;
+    color: white;
+  }
+  
+  .leftnav img {
+    width:60px;
+    height: 60px;
+    float: left;
+    margin-top: -20px;
+    margin-right: 965px;
+  }
+
+  .code{
+    width: 250px;
+    height: 30px;
+    margin-left: -20px;
+  }
+
+  .newpass{
+    width: 300px;
+    height: 30px;
+    margin-left: -20px;
+
+  }
+
+  .confirmpass{
+    width: 300px;
+    height: 30px;
+    margin-left: -20px;
+  }
+
+  .card{
+    background-color: gray;
+    width: 65%;
+    height: 80px;
+    padding: 50px;
+    margin-left: 5px;
+    margin-top: 20px;
+    border-radius: 13px;
+  }
+
+  .one {
+    font-family: Arial;
+    font-size: 23px;
+    margin-top: -30px;
+    margin-left: -20px;
+  }
+
+  .two {
+    font-family: Arial;
+    font-size: 23px;
+    margin-left: -20px;
+    margin-top: 30px;
+  }
+
+  .three {
+    font-family: Arial;
+    font-size: 23px;
+    margin-left: -20px;
+    margin-top: 30px;
+  }
+
+  .msg{
+    text-align: center;
+    font-size: 30px;
+    padding: 100px 0px;
+    width: 100%;
+  }
+
+  .reset{
+    font-family: Arial;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  .send{
+    width: 180px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  body{
+    background-color: aliceblue;
+  }
+
+  @media only screen and (min-width: 375px) {
+    .card{
+    background-color: gray;
+    width: 65%;
+    height: 80px;
+    padding: 50px;
+    margin-left: 15px;
+    margin-top: 20px;
+    border-radius: 13px;
+  }
+
+  .code{
+    width: 290px;
+    height: 30px;
+    margin-left: -20px;
+  }
+
+  .send{
+    width: 210px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  }
+
+  @media only screen and (min-width: 425px) {
+    .card{
+    background-color: gray;
+    width: 69%;
+    height: 80px;
+    padding: 50px;
+    margin-left: 15px;
+    margin-top: 20px;
+    border-radius: 13px;
+  }
+
+  .code{
+    width: 320px;
+    height: 30px;
+    margin-left: -20px;
+  }
+
+  .send{
+    width: 230px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .card{
+    background-color: gray;
+    width: 39%;
+    height: 80px;
+    padding: 50px;
+    margin-left: 180px;
+    margin-top: 20px;
+    border-radius: 13px;
+  }
+
+  .code{
+    width: 320px;
+    height: 30px;
+    margin-left: -20px;
+  }
+
+  .send{
+    width: 230px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .card{
+    background-color: gray;
+    width: 29%;
+    height: 80px;
+    padding: 50px;
+    margin-left: 310px;
+    margin-top: 20px;
+    border-radius: 13px;
+  }
+
+  .code{
+    width: 320px;
+    height: 30px;
+    margin-left: -20px;
+  }
+
+  .send{
+    width: 230px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  }
+  @media only screen and (min-width: 1300px) {
+    .card{
+    background-color: gray;
+    width: 20%;
+    height: 80px;
+    padding: 50px;
+    margin-left: 470px;
+    margin-top: 20px;
+    border-radius: 13px;
+  }
+  .reset{
+    font-family: Arial;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: -45px;
+  }
+
+  .code{
+    width: 300px;
+    height: 30px;
+    margin-left: -20px;
+  }
+
+  .send{
+    width: 260px;
+    height: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 1440px) {
+    .card{
+    background-color: gray;
+    width: 20%;
+    height: 80px;
+    padding: 50px;
+    margin-left: 515px;
+    margin-top: 20px;
+    border-radius: 13px;
+  }
+  .reset{
+    font-family: Arial;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: -45px;
+  }
+
+  .code{
+    width: 300px;
+    height: 30px;
+    margin-left: -20px;
+  }
+
+  .send{
+    width: 260px;
+    height: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 0px;
+  }
+  }
+
+  @media only screen and (min-width: 1800px) {
+    .card{
+    background-color: gray;
+    width: 15%;
+    height: 80px;
+    padding: 50px;
+    margin-left: 765px;
+    margin-top: 20px;
+    border-radius: 13px;
+  }
+  .reset{
+    font-family: Arial;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: -45px;
+  }
+
+  .code{
+    width: 300px;
+    height: 30px;
+    margin-left: -10px;
+  }
+
+  .send{
+    width: 260px;
+    height: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  }
+
+  @media only screen and (min-width: 2350px) {
+    .card{
+    background-color: gray;
+    width: 11%;
+    height: 80px;
+    padding: 50px;
+    margin-left: 1065px;
+    margin-top: 20px;
+    border-radius: 13px;
+  }
+  .reset{
+    font-family: Arial;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: -45px;
+  }
+
+  .code{
+    width: 300px;
+    height: 30px;
+    margin-left: -10px;
+  }
+
+  .send{
+    width: 260px;
+    height: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  }
+</style>
+
+<html lang="en">
+    <head>
+        <title>Sewa Hours - Forgot Password</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://www.logolynx.com/images/logolynx/s_f5/f518c85cb9f37aa1e50995008a69f5df.jpeg" rel="shortcut icon" type="image/jpg"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <header>
+            <header class="rightnav" aria-label="navigation">
+                <a href="https://www.sewausa.org/Chapters" target="_blank">Contact Coordinator</a>
+                <a href="/" onclick="clearLocal()">Home</a>
+            </header>
+        </header>
+    </head>
+    <body>
+        <p class="reset">Verication Code</p>
+        <div class="card">
+            <form method="get" class="enter" id="Enter">
+                <p class="one">Code:</p>
+                <input class="code" type="number" id="Code" required min="0">
+                <button type="button" class="send" id="Send" onclick="resetPass()">Verify</button>
+                <p class="msg" id="msg"></p>
+            </form>
+          </div>
+      </body>
+
+</html>
+
+<script>
+  document.getElementById("msg").innerHTML = "Check Your Email to Reset Your Password and/or Username"
+  function resetPass()
+  {
+    const code = document.getElementById("Code").value
+    const hashedemail = window.localStorage.getItem("email")
+
+    var username_data = [
+      {"email": hashedemail}
+    ];
+
+    $.ajax({
+      type: "POST",
+      url: "/gethashedtwo",
+      data: JSON.stringify(username_data),
+      contentType: "application/json",
+      dataType: 'json',
+      success: function(datas)
+      {
+        const email =  datas.unhash
+        if (code == "")
+        {
+          alert ("Code not entered")
+        }
+        else
+        {
+          var server_data = [
+            {"email" : email},
+            {"code" : code}
+          ];
+
+          $.ajax({
+            type: "POST",
+            url: "/verify",
+            data: JSON.stringify(server_data),
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data)
+            {
+              if (data.code == "No")
+              {
+                alert("Invalid Code")
+              }
+              else
+              {
+                window.location.href = "/change"
+              }
+            }
+          });
+        }
+      }
+    });
+  }
+</script>
+
+<script>
+  localStorage.removeItem("username")
+</script>
+
+<script>
+  function clearLocal()
+  {
+    localStorage.clear()
+  }
+</script>
+
+<script>
+  var global = 120;
+
+  function noMovement() {
+  if (global == 0) {
+  window.location.href = "/";  
+  localStorage.clear()
+  resetGlobal();                
+  } else {
+        global--;
+  }
+  }
+
+  function resetGlobal() {
+  global=120;                    
+  }
+
+  $(document).ready(function(){
+  $('html').mousemove(function(event){
+    resetGlobal();
+  });
+  });
+
+  setInterval(function(){noMovement()}, 1000);
+</script>

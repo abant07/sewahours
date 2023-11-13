@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+}
+
+  @media only screen and (min-width: 320px) {
+    /* Add a black background color to the top navigation */
+  .rightnav {
+    background-color: rgb(66, 22, 101);
+    overflow: hidden;
+    height: 70px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .rightnav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 23px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .rightnav a:hover {
+    color: yellow;
+  }
+  
+  /* Add a color to the active/current link */
+  .rightnav a.active1 {
+    background-color: black;
+    color: white;
+  }
+  
+  .image{
+    width: 265%;
+    height: 250px;
+    margin-left: -100px;
+  }
+
+  .hours {
+    font-family:Helvetica;
+    font-size: 32px;
+    background-color: aliceblue;
+    text-align: center;
+    height: 80px;
+    color:rgb(66, 22, 101);
+  }
+
+  .pvsa{
+    padding: 0px 100px;
+    background-color:aliceblue;
+  }
+
+  .leftdescrip{
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    font-size:20px;
+    padding: 20px 20px;
+    width: 87.5%;
+    background-color: aliceblue;
+  }
+
+  .note {
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    width: 87.5%;
+    font-size:20px;
+    float: center;
+    padding: 10px 20px;
+    background-color: aliceblue;
+  }
+
+  form{
+    background-color: aliceblue;;
+  }
+
+  .login{
+    font-family: Arial;
+    font-size: 18px;
+    padding: 0px 85px;
+    color: white;
+  }
+
+  .card{
+    float: right;
+    margin-right: -89px;
+    background-color: rgb(171, 28, 28);
+    height: 350px;
+    width: 250%;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .labeluser{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .user{
+    height: 30px;
+    width: 250px;
+    margin-left: 10px;
+  }
+
+  .labelpass{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .password{
+    height: 30px;
+    width: 250px;
+    margin-left: 10px;
+  }
+
+  .signin{
+    width: 100px;
+    height: 25px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor:pointer;
+  }
+
+  .credential{
+    background-color:rgb(171, 28, 28) ;
+  }
+
+  .signup{
+    background-color: rgb(171, 28, 28);
+  }
+
+  .register{
+    margin-top: 55px;
+    width: 85%;
+    margin-left: 25px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .forgot a{
+    color: white;
+    padding: 10px 20px;
+    font-size: 13px;
+    width: 100%;
+
+  }
+
+  .space{
+    height: 50px;
+    background-color: aliceblue;
+  }
+
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 21px;
+    text-align: center;
+    height: 140px;
+    width: 100%;
+    font-family: Arial;
+  }
+  }
+  @media only screen and (min-width: 375px) {
+  .login{
+    font-family: Arial;
+    font-size: 18px;
+    padding: 0px 85px;
+    color: white;
+    text-align: center;
+  }
+  .image{
+    width: 215%;
+    height: 250px;
+    margin-left: -100px;
+  }
+
+  .card{
+    float: right;
+    margin-right: -89px;
+    background-color: rgb(171, 28, 28);
+    height: 320px;
+    width: 200%;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .labeluser{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .user{
+    height: 30px;
+    width: 310px;
+    margin-left: 10px;
+  }
+
+  .labelpass{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .password{
+    height: 30px;
+    width: 310px;
+    margin-left: 10px;
+  }
+
+  .signin{
+    width: 100px;
+    height: 25px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor:pointer;
+  }
+
+  .credential{
+    background-color:rgb(171, 28, 28) ;
+  }
+
+  .signup{
+    background-color: rgb(171, 28, 28);
+  }
+
+  .register{
+    margin-top: 55px;
+    width: 85%;
+    margin-left: 25px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .forgot a{
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    width: 100%;
+  }
+  .leftdescrip{
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    font-size:20px;
+    padding: 20px 20px;
+    width: 89.5%;
+    background-color: aliceblue;
+  }
+
+  .note {
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    width: 89.5%;
+    font-size:20px;
+    float: center;
+    padding: 10px 20px;
+    background-color: aliceblue;
+  }
+  }
+  @media only screen and (min-width: 414px) {
+    .login{
+    font-family: Arial;
+    font-size: 18px;
+    padding: 0px 85px;
+    color: white;
+    text-align: center;
+  }
+
+  .image{
+    width: 193%;
+    height: 250px;
+    margin-left: -100px;
+  }
+
+  .card{
+    float: right;
+    margin-right: -89px;
+    background-color: rgb(171, 28, 28);
+    height: 320px;
+    width: 185%;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .labeluser{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .user{
+    height: 30px;
+    width: 370px;
+    margin-left: 10px;
+  }
+
+  .labelpass{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .password{
+    height: 30px;
+    width: 370px;
+    margin-left: 10px;
+  }
+
+  .signin{
+    width: 100px;
+    height: 25px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor:pointer;
+  }
+
+  .register{
+    margin-top: 55px;
+    width: 85%;
+    margin-left: 25px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .forgot a{
+    color: white;
+    padding: 10px 20px;
+    font-size: 17px;
+    width: 100%;
+  }
+  .leftdescrip{
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    font-size:20px;
+    padding: 20px 20px;
+    width: 90.5%;
+    background-color: aliceblue;
+  }
+
+  .note {
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    width: 90.5%;
+    font-size:20px;
+    float: center;
+    padding: 10px 20px;
+    background-color: aliceblue;
+  }
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 20px;
+    text-align: center;
+    height: 140px;
+    width: 100%;
+    font-family: Arial;
+  }
+  }
+  @media only screen and (min-width: 425px) {
+    .login{
+    font-family: Arial;
+    font-size: 18px;
+    padding: 0px 85px;
+    color: white;
+    text-align: center;
+  }
+  .image{
+    width: 185%;
+    height: 250px;
+    margin-left: -100px;
+  }
+
+  .card{
+    float: right;
+    margin-right: -89px;
+    background-color: rgb(171, 28, 28);
+    height: 320px;
+    width: 180%;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .labeluser{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .user{
+    height: 30px;
+    width: 370px;
+    margin-left: 10px;
+  }
+
+  .labelpass{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .password{
+    height: 30px;
+    width: 370px;
+    margin-left: 10px;
+  }
+
+  .signin{
+    width: 100px;
+    height: 25px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor:pointer;
+  }
+
+  .register{
+    margin-top: 55px;
+    width: 85%;
+    margin-left: 25px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .forgot a{
+    color: white;
+    padding: 10px 20px;
+    font-size: 17px;
+    width: 100%;
+  }
+  .leftdescrip{
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    font-size:20px;
+    padding: 20px 20px;
+    width: 90.5%;
+    background-color: aliceblue;
+  }
+
+  .note {
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    width: 90.5%;
+    font-size:20px;
+    float: center;
+    padding: 10px 20px;
+    background-color: aliceblue;
+  }
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 20px;
+    text-align: center;
+    height: 140px;
+    width: 100%;
+    font-family: Arial;
+  }
+  }
+  @media only screen and (min-width: 768px) {
+    .login{
+    font-family: Arial;
+    font-size: 18px;
+    padding: 0px 85px;
+    color: white;
+    text-align: center;
+  }
+
+  .image{
+    width: 60%;
+    height: 270px;
+    float: right;
+    margin-top: 30px;
+    margin-right: -90px;
+  }
+
+  .card{
+    float: left;
+    margin-left: -60px;
+    background-color: rgb(171, 28, 28);
+    height: 320px;
+    width: 60%;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .labeluser{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .user{
+    height: 30px;
+    width: 310px;
+    margin-left: 10px;
+  }
+
+  .labelpass{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .password{
+    height: 30px;
+    width: 310px;
+    margin-left: 10px;
+  }
+
+  .signin{
+    width: 100px;
+    height: 25px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor:pointer;
+  }
+
+  .register{
+    margin-top: 55px;
+    width: 85%;
+    margin-left: 25px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .forgot a{
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    width: 100%;
+  }
+  .leftdescrip{
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    font-size:32px;
+    text-align: center;
+    padding: 400px 20px;
+    width: 95%;
+    background-color: aliceblue;
+  }
+
+  .note {
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    width: 95%;
+    font-size:30px;
+    text-align: center;
+    float: center;
+    margin-top: -300px;
+    background-color: aliceblue;
+  }
+  .space{
+    height: 130px;
+  }
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 20px;
+    text-align: center;
+    height: 140px;
+    width: 100%;
+    font-family: Arial;
+  }
+  }
+  @media only screen and (min-width: 1024px) {
+    .rightnav {
+    background-color: rgb(66, 22, 101);
+    overflow: hidden;
+    height: 70px;
+    width: 101%;
+  }
+    .hours {
+    font-family:Helvetica;
+    font-size: 32px;
+    background-color: aliceblue;
+    text-align: center;
+    height: 80px;
+    width: 101%;
+    color:rgb(66, 22, 101);
+  }
+    .image{
+    width: 60%;
+    height: 300px;
+    float: right;
+    margin-top: 30px;
+    margin-right: -70px;
+  }
+
+  .card{
+    float: left;
+    margin-left: -60px;
+    background-color: rgb(171, 28, 28);
+    height: 320px;
+    width: 50%;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .labeluser{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .user{
+    height: 30px;
+    width: 370px;
+    margin-left: 10px;
+  }
+
+  .labelpass{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .password{
+    height: 30px;
+    width: 370px;
+    margin-left: 10px;
+  }
+
+  .signin{
+    width: 100px;
+    height: 25px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor:pointer;
+  }
+  .leftdescrip{
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    font-size:32px;
+    text-align: center;
+    padding: 400px 20px;
+    width: 97%;
+    background-color: aliceblue;
+  }
+
+  .note {
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    width: 97%;
+    font-size:30px;
+    text-align: center;
+    float: center;
+    margin-top: -300px;
+    background-color: aliceblue;
+  }
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 20px;
+    text-align: center;
+    height: 140px;
+    width: 101%;
+    font-family: Arial;
+  }
+  }
+  @media only screen and (min-width: 1440px) {
+    .image{
+    width: 60%;
+    height: 400px;
+    float: right;
+    margin-top: 0px;
+  }
+
+  .card{
+    float: left;
+    margin-left: -40px;
+    background-color: rgb(171, 28, 28);
+    height: 320px;
+    width: 38%;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .labeluser{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .user{
+    height: 30px;
+    width: 450px;
+    margin-left: 10px;
+  }
+
+  .labelpass{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .password{
+    height: 30px;
+    width: 450px;
+    margin-left: 10px;
+  }
+
+  .signin{
+    width: 100px;
+    height: 25px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor:pointer;
+  }
+  .forgot a{
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 100%;
+  }
+  .leftdescrip{
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    font-size:42px;
+    text-align: center;
+    padding: 500px 20px;
+    width: 98.5%;
+    background-color: aliceblue;
+  }
+
+  .note {
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    width: 98.5%;
+    font-size:38px;
+    text-align: center;
+    float: center;
+    margin-top: -400px;
+    background-color: aliceblue;
+  }
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 27px;
+    text-align: center;
+    height: 190px;
+    width: 101%;
+    font-family: Arial;
+    margin-top: 20px;
+  }
+
+  }
+
+  @media only screen and (min-width: 1300px) {
+    .rightnav {
+    background-color: rgb(66, 22, 101);
+    overflow: hidden;
+    height: 70px;
+    width: 100%;
+  }
+    .hours {
+    font-family:Helvetica;
+    font-size: 32px;
+    background-color: aliceblue;
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    color:rgb(66, 22, 101);
+  }
+    .image{
+    width: 60%;
+    height: 400px;
+    float: right;
+    margin-top: 0px;
+    margin-right: -70px;
+  }
+
+  .card{
+    float: left;
+    margin-left: -40px;
+    background-color: rgb(171, 28, 28);
+    height: 320px;
+    width: 38%;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .labeluser{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .user{
+    height: 30px;
+    width: 410px;
+    margin-left: 10px;
+  }
+
+  .labelpass{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .password{
+    height: 30px;
+    width: 410px;
+    margin-left: 10px;
+  }
+
+  .signin{
+    width: 100px;
+    height: 25px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor:pointer;
+  }
+  .forgot a{
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 100%;
+  }
+  .leftdescrip{
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    font-size:42px;
+    text-align: center;
+    padding: 500px 20px;
+    width: 97%;
+    background-color: aliceblue;
+  }
+
+  .note {
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    width: 97%;
+    font-size:38px;
+    text-align: center;
+    float: center;
+    margin-top: -400px;
+    background-color: aliceblue;
+  }
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 27px;
+    text-align: center;
+    height: 190px;
+    width: 100%;
+    font-family: Arial;
+    margin-top: 20px;
+  }
+  }
+
+  @media only screen and (min-width: 1900px) {
+    .image{
+    width: 42%;
+    height: 400px;
+    float: right;
+    margin-top: 0px;
+    margin-right: 120px;
+  }
+
+  .card{
+    float: left;
+    margin-left: 100px;
+    background-color: rgb(171, 28, 28);
+    height: 320px;
+    width: 28%;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .labeluser{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .user{
+    height: 30px;
+    width: 450px;
+    margin-left: 10px;
+  }
+
+  .labelpass{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .password{
+    height: 30px;
+    width: 450px;
+    margin-left: 10px;
+  }
+
+  .signin{
+    width: 100px;
+    height: 25px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor:pointer;
+  }
+  .forgot a{
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 100%;
+  }
+  .leftdescrip{
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    font-size:42px;
+    text-align: center;
+    padding: 500px 20px;
+    width: 99.5%;
+    background-color: aliceblue;
+  }
+
+  .note {
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    width: 98.5%;
+    font-size:38px;
+    text-align: center;
+    float: center;
+    margin-top: -500px;
+    background-color: aliceblue;
+  }
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 27px;
+    text-align: center;
+    height: 140px;
+    width: 101.5%;
+    font-family: Arial;
+    margin-top: -100px;
+  }
+  .rightnav {
+    background-color: rgb(66, 22, 101);
+    overflow: hidden;
+    height: 70px;
+    width: 101.5%;
+  }
+  .hours {
+    font-family:Helvetica;
+    font-size: 32px;
+    background-color: aliceblue;
+    text-align: center;
+    height: 80px;
+    width: 101.5%;
+    color:rgb(66, 22, 101);
+  }
+
+  }
+
+  @media only screen and (min-width: 2560px) {
+    .image{
+    width: 32%;
+    height: 400px;
+    float: right;
+    margin-top: 0px;
+    margin-right: 320px;
+  }
+
+  .card{
+    float: left;
+    margin-left: 300px;
+    background-color: rgb(171, 28, 28);
+    height: 320px;
+    width: 21%;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .labeluser{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .user{
+    height: 30px;
+    width: 450px;
+    margin-left: 10px;
+  }
+
+  .labelpass{
+    font-family: Arial;
+    color: white;
+    margin-left: 10px;
+    margin-top: 40px;
+  }
+
+  .password{
+    height: 30px;
+    width: 450px;
+    margin-left: 10px;
+  }
+
+  .signin{
+    width: 100px;
+    height: 25px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+    cursor:pointer;
+  }
+  .forgot a{
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 100%;
+  }
+  .leftdescrip{
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    font-size:42px;
+    text-align: center;
+    padding: 500px 20px;
+    width: 100.5%;
+    background-color: aliceblue;
+  }
+
+  .note {
+    color: rgb(75, 75, 155);
+    font-family: Helvetica;
+    width: 98.5%;
+    font-size:38px;
+    text-align: center;
+    float: center;
+    margin-top: -400px;
+    background-color: aliceblue;
+  }
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 27px;
+    text-align: center;
+    height: 190px;
+    width: 101.5%;
+    font-family: Arial;
+    margin-top: 20px;
+  }
+  .rightnav {
+    background-color: rgb(66, 22, 101);
+    overflow: hidden;
+    height: 70px;
+    width: 101.5%;
+  }
+  .hours {
+    font-family:Helvetica;
+    font-size: 32px;
+    background-color: aliceblue;
+    text-align: center;
+    height: 80px;
+    width: 101.5%;
+    color:rgb(66, 22, 101);
+  }
+
+  }
+
+</style>
+
+<html lang="en">
+    <head>
+        <title>Sewa Hours - Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="UTF-8">
+        <meta name="description" content="Sewa Hours is an automated volunteer hour logging application that will allow volunteers from Sewa International to become eligible for Presidential Volunteer Service Awards.">
+        <meta name="keywords" content="hours, logging, medal, sewa international, sewa, home, login, international, eligible, presidential, award, service">
+        <meta name="author" content="Sewa International">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://www.logolynx.com/images/logolynx/s_f5/f518c85cb9f37aa1e50995008a69f5df.jpeg" rel="shortcut icon" type="image/jpg"/>
+
+        <header>
+            <header class="rightnav" aria-label="navigation">
+                <a href="https://www.sewausa.org/Chapters" target="_blank">Contact Coordinator</a>
+                <a href="/" onclick="clearLocal()">Home</a>
+            </header>
+        </header>
+    </head>
+    <body>
+        <p class="hours">Sewa Hours</p>
+        <div class="pvsa">
+            <img class="image"src="https://i.pinimg.com/originals/33/5e/2c/335e2c13d49a2b6611beb6dec00f5c06.jpg"/>
+             <div class="card">
+                <p class="login">Account Login</p>
+
+                <form method="post" class="credential" name="Credentials">
+                    <div class="log">
+                        <p class="labeluser">Username:</p>
+                        <input type="text" class="user" name="User" required/>
+                        <p class="labelpass">Password:</p>
+                        <input type="password" class="password" name="Password"required/>
+                    </div>
+                    <input type="button" class="signin" value="Sign in" onclick="login()"/>
+                </form>
+
+                <div class="forgot">
+                    <a href="/forgotpass">Forgot Password/Username</a>
+                    <form class="signup"method="get" action="/signup">
+                    <button type="submit" class="register" id="Register">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <p class="leftdescrip">Enter Volunteer Hours to be Eligible for a US Presidential Volunteer Service Award</p>
+        <p class="note"></p>
+
+        <div class="space"></div>
+    </body>
+
+    <footer>
+        <p>Disclaimer: This is a prototype that is being tested!</p>
+        <p>We advise to keep your hours sepeartely logged in a spreadsheet in case the web app crashes</p>
+        <p>We are not responsible for lost hours!</p>
+    </footer>
+</html>
+
+<script>
+  localStorage.clear()
+</script>
+
+<script>
+    function login()
+{
+    var username = document.forms["Credentials"]["User"].value;
+    var password = document.forms["Credentials"]["Password"].value;
+
+    var username_data = [
+      {"username": username}
+    ];
+
+    $.ajax({
+      type: "POST",
+      url: "/hashing",
+      data: JSON.stringify(username_data),
+      contentType: "application/json",
+      dataType: 'json',
+      success: function(data)
+      {
+        localStorage.setItem("username", data.hashed)
+      }
+    });
+    
+    var server_data = [
+      {"username": username},
+      {"password": password}
+    ];
+
+    $.ajax({
+      type: "POST",
+      url: "/login",
+      data: JSON.stringify(server_data),
+      contentType: "application/json",
+      dataType: 'json',
+      processData: false,
+      success: function(data)
+      {
+        if (data.authenticated === "volunteer")
+        {
+          window.location.href = "/loghours"
+        }
+        else if (data.authenticated === "admin")
+        {
+          window.location.href = "/adminhome"
+        }
+        else if (data.authenticated === "No")
+        {
+          alert ("Invalid Username or Password")
+        }
+        else if (data.authenticated == "Pending")
+        {
+          alert("Admin Approval Request in Progress")
+        }
+        else if (data.authenticated == "Removed")
+        {
+          alert("You Are No Longer an Admin")
+        }
+        else if (data.authenticated == "Rejected")
+        {
+          alert("Admin Approval Request was Denied")
+        }
+        else if (data.authenticated == "Permanently")
+        {
+          alert("You Don't Have Admin Powers")
+        }
+      }
+    });
+}
+
+</script>
+
+<script>
+  function clearLocal()
+  {
+    localStorage.clear()
+  }
+</script>
+

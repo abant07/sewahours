@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+}
+
+.sortapproved{
+  margin-top: 100px;
+  margin-left: 100px;
+}
+table{
+    border-collapse: collapse;
+  }
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(66, 22, 101);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: yellow;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: rgb(66, 22, 101);
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: rgb(66, 22, 101);
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 170px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+  body{
+    background-color: aliceblue;
+    font-family: "Lato", sans-serif;
+  }
+
+
+  .track{
+    font-size: 25px;
+    font-family: Arial;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .limit {
+    overflow-y: scroll;
+    height: 600px;
+    margin-left: -50px;
+    width: 100%;
+}
+
+  .validate{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 80%;
+  }
+
+  td, th {
+    border: 1px solid black;
+    border-width: 3px;
+    text-align: left;
+    padding: 8px;
+    font-size: 17px;
+    width: 200px;
+  }
+  .certify{
+    font-size: 30px;
+    text-align: center;
+  }
+  .comment{
+    width: 95%;
+    height: 100px;
+    word-wrap: break-word;
+  }
+
+  .space{
+    height: 120px;
+  }
+
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 22px;
+    text-align: center;
+    height: 140px;
+    font-family: Arial;
+    margin-top: 9px;
+  }
+
+  .navbar{
+    margin-top: 8px;
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: rgb(66, 22, 101);
+      color: yellow;
+    }
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(66, 22, 101);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+      float: none;
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+  }
+
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: white;
+      color: rgb(66, 22, 101);
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .home{
+      margin-top: -8px;
+    }
+
+    .profile{
+      margin-top: -8px;
+    }
+
+    .submit{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 5px;
+    width: 95%;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .submit{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 170px;
+    width: 50%;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+  }
+
+  @media only screen and (min-width: 1024px) {
+
+    .limit {
+    overflow-y: scroll;
+    height: 600px;
+    width: 100%;
+    margin-left: 10px;
+}
+    .submit{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 250px;
+    width: 50%;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+  }
+
+  @media only screen and (min-width: 1300px) {
+    .limit {
+    overflow-y: scroll;
+    height: 600px;
+    width: 100%;
+    margin-left: -1px;
+}
+.submit{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 450px;
+    width: 30%;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+    
+}
+@media only screen and (min-width: 1440px) {
+    .limit {
+    overflow-y: scroll;
+    height: 600px;
+    width: 100%;
+    margin-left: 20px;
+}
+.submit{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 480px;
+    width: 30%;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+}
+
+  @media only screen and (min-width: 1900px) {
+    .limit {
+    overflow-y: scroll;
+    height: 600px;
+    width: 100%;
+    margin-left: 100px;
+}
+.submit{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 680px;
+    width: 30%;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+    cursor: pointer;
+    
+  }
+  footer{
+    background-color: lightgray;
+    color: rgb(66, 22, 101);
+    font-size: 22px;
+    text-align: center;
+    height: 140px;
+    font-family: Arial;
+    margin-top: 9px;
+    width: 105.5%;
+  }
+    
+}
+
+@media only screen and (min-width: 2560px) {
+    .limit {
+    overflow-y: scroll;
+    height: 600px;
+    width: 100%;
+    margin-left: 100px;
+}
+.submit{
+    font-size:15px;
+    text-align: center;
+    height: 45px;
+    margin-left: 880px;
+    width: 30%;
+    background-color: bisque;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+    
+}
+</style>
+
+<html lang="en">
+    <head>
+        <title>Sewa Hours - Rejected Hours</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://www.logolynx.com/images/logolynx/s_f5/f518c85cb9f37aa1e50995008a69f5df.jpeg" rel="shortcut icon" type="image/jpg"/>
+
+        <header>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/adminhome" class="home">Home</a>
+            <a href="/adminprofile" class="profile">Manage Profile</a>
+            <a href="/manageadmins">Manage Admins</a>
+            <a href="/reinstateadmins">Reinstate Admins</a>
+            <a href="/addcategory">Add Sewa Program</a>
+            <a href="/removecategory">Remove Sewa Program</a>
+            <a href="/addevents">Add Events</a>
+            <a href="/removeevents">Remove Events</a>
+            <a href="/certify">Certify Hours</a>
+            <button class="dropdown-btn">Reports  
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="/approvedhours">Approved Hours Report</a>
+              <a href="/certifiedhours">Certified Hours Report</a>
+              <a href="/rejectedhours">Rejected Hours Report</a>
+              <a href="/unapprovedhours">Unapproved Hours Report</a>
+              <a href="/yearend">Year End Medal Report</a>
+            </div>
+            <a href="/logout" onclick="clearLocal()">Log-Out</a>
+          </div>
+            
+          <span style="font-size:28px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+          <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "280px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+            
+            <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                } else {
+                  dropdownContent.style.display = "block";
+                }
+              });
+            }
+            </script>
+      </header>
+    </head>
+
+    <body>
+      <p class="certify">Rejected Hours</p>
+        <p class="track" id="Track"></p>
+        <div class="limit">
+          <form class="sortapproved">
+            <p class="datetag1">Start Date</p>
+            <input type="date" id="dates1" name="date" step=7 min="2022-01-02" onkeydown="return false" required />
+            <p class="datetag1">End Date</p>
+            <input type="date" id="dates2" name="date" step=7 min="2022-01-08" onkeydown="return false" required />
+            <p class="datetag1">Chapter</p>
+            <select id="chapters">
+              <option>All Chapters</option>
+              <option>Atlanta, GA</option>
+              <option>Austin, TX</option>
+              <option>Bay Area, CA</option>
+              <option>Bloomington, IL</option>
+              <option>Boston, MA</option>
+              <option>Boston, ME</option>
+              <option>Central Jersey, NJ</option>
+              <option>Charlotte, NC</option>
+              <option>Chicago, IL</option>
+              <option>Cleveland, OH</option>
+              <option>Columbus, OH</option>
+              <option>Dallas, TX</option>
+              <option>Denver, CO</option>
+              <option>Detriot, MI</option>
+              <option>Houston, TX</option>
+              <option>Indianapolis, IN</option>
+              <option>Los Angelos, CA</option>
+              <option>Milwaukee, WI</option>
+              <option>New York City, NY</option>
+              <option>North Jersey, NJ</option>
+              <option>Milwaukee, WI</option>
+              <option>Pennsylvaina, DE</option>
+              <option>Phoenix, AZ</option>
+              <option>Portland, OR</option>
+              <option>Raleigh, NC</option>
+              <option>RTP, MO</option>
+              <option>Sacramento, CA</option>
+              <option>Salt Lake City, UT</option>
+              <option>San Antonio, TX</option>
+              <option>San Diego, CA</option>
+              <option>Seattle, WA</option>
+              <option>St Louis, IL</option>
+              <option>Washington DC</option>
+          </select>
+          </form>
+          <table class="validate" id="Validate">
+            <tr>
+                <th>Volunteer Name</th>
+                <th>Sewa Programs</th>
+                <th>Event</th>
+                <th>Chapter</th>
+                <th>Week</th>
+                <th>Submission Status</th>
+                <th>Total Hours</th>
+            </tr>
+         </table>
+        </div>
+        <form method="get">
+          <input type="button" value="Generate" class="submit" id="Submit" onclick="onChange()">
+        </form>
+    </body>
+
+    <div class="space"></div>
+
+    <footer>
+      <p>Disclaimer: This is a prototype that is being tested!</p>
+      <p>We advise to keep your hours sepeartely logged in a spreadsheet in case the web app crashes</p>
+      <p>We are not responsible for lost hours!</p>
+  </footer>
+</html>
+
+<script>
+  const hasheduser = window.localStorage.getItem("username")
+  const table = document.getElementById("Validate")
+  let hoursleft = []
+  var username_data = [
+      {"username": hasheduser}
+    ];
+
+    $.ajax({
+      type: "POST",
+      url: "/gethashed",
+      data: JSON.stringify(username_data),
+      contentType: "application/json",
+      dataType: 'json',
+      success: function(datas)
+      {
+        const user = datas.unhash
+
+        $.ajax({
+          type: "POST",
+          url: "/rejectreport",
+          contentType: "application/json",
+          dataType: 'json',
+          success: function(data)
+          {
+              for (let i = 0; i < data.length; i++)
+              {
+                hoursleft[i] = data[i].unapproved
+                console.log (hoursleft)
+                  table.innerHTML += `
+                  <tr style="height:150px" id="volunteerhour">
+                            <td>${data[i].name}</td>
+                            <td>${data[i].eventCat}</td>
+                            <td>${data[i].event}</td>
+                            <td>${data[i].chapter}</td>
+                            <td>${data[i].week}</td>
+                            <td>${data[i].date}</td>
+                            <td>${data[i].totalhours}</td>
+                    </tr>
+                  `
+
+              }
+                
+            }
+          });
+        }
+    });
+
+    function onChange()
+    {
+      const dates = document.getElementById("dates1").value
+      const dates1 = document.getElementById("dates2").value
+      const chapter = document.getElementById("chapters").value
+
+      if (dates === "")
+      {
+        alert("Start Date Not Entered")
+      }
+      else if (dates1 === "")
+      {
+        alert("End Date Not Entered")
+      }
+      else
+      {
+        var filter_data = [
+          {"date" : dates},
+          {"dates" : dates1},
+          {"chapter" : chapter}
+        ];
+
+        $.ajax({
+          type: "POST",
+          url: "/filterrejected",
+          data: JSON.stringify(filter_data),
+          contentType: "application/json",
+          dataType: 'json',
+          success: function(data)
+          {
+            table.innerHTML = ""
+            table.innerHTML += `                  
+            <tr>
+              <th>Volunteer Name</th>
+              <th>Event Category</th>
+              <th>Event</th>
+              <th>Chapter</th>
+              <th>Week</th>
+              <th>Submission Status</th>
+              <th>Total Hours</th>
+            </tr>`
+            for (let i = 0; i < data.length; i++)
+              {
+                hoursleft[i] = data[i].unapproved
+                  table.innerHTML += `
+                  <tr style="height:150px" id="volunteerhour">
+                            <td>${data[i].name}</td>
+                            <td>${data[i].eventCat}</td>
+                            <td>${data[i].event}</td>
+                            <td>${data[i].chapter}</td>
+                            <td>${data[i].week}</td>
+                            <td>${data[i].date}</td>
+                            <td>${data[i].totalhours}</td>
+                    </tr>
+                  `
+
+              }  
+          }
+        })
+      }
+    }
+</script>
+
+<script>
+  function clearLocal()
+  {
+    localStorage.clear()
+  }
+</script>
+
+<script>
+  var global = 300;
+
+  function noMovement() {
+  if (global == 0) {
+  window.location.href = "/logout";  
+  localStorage.clear()
+  resetGlobal();                
+  } else {
+        global--;
+  }
+  }
+
+  function resetGlobal() {
+  global=300;                    
+  }
+
+  $(document).ready(function(){
+  $('html').mousemove(function(event){
+    resetGlobal();
+  });
+  });
+
+  setInterval(function(){noMovement()}, 1000);
+</script>
