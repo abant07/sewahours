@@ -8,10 +8,15 @@ To get started:
 
 Set up a python venv (alternatively you can use conda to install a environment for a dedicated Python version)
 
-`python3 -m venv venv
-source activate venv/bin/activate
-` 
+`python3 -m venv venv` 
+
+
+`source activate venv/bin/activate`
+
+
 Install dependencies
+
+
 `pip install -r requirements.txt` 
 
 Run application
